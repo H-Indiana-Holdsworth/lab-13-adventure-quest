@@ -7,7 +7,7 @@
     - [x] Form Submit button
 * Events
     * Form Submit
-        - [ ] Generate a user object using form data (generateUser)
+        - [x] Generate a user object using form data (generateUser)
         - [ ] Store data in localStorage
         - [ ] Redirect to Home page
 
