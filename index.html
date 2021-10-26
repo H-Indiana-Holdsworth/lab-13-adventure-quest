@@ -11,11 +11,41 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>A Star Wars Adventure</title>
 </head>
 
 <body>
-    
+    <form id="user-form">
+        <label for="name">
+            <input type="text" name="name">
+        </label>
+
+        <legend>Pick Your Race:</legend>
+        <p id="avatars">
+            <label>
+                <input type="radio" name="race" required value="ewok">
+                <img src="./assets/ewok.jpeg" alt="ewok">
+                Ewok
+            </label>
+            <label>
+                <input type="radio" name="race" required value="grievous">
+                <img src="./assets/grievous.jpeg" alt="grievous">
+                Grievous
+            </label>
+            <label>
+                <input type="radio" name="race" required value="robot">
+                <img src="./assets/robot.jpeg" alt="robot">
+                Robot
+            </label>
+            <label>
+                <input type="radio" name="race" required value="storm">
+                <img src="./assets/storm.jpeg" alt="stormtrooper">
+                Stormtrooper
+            </label>
+        </p>
+
+        <button id="start-button">Start Your Adventure!</button>
+    </form>
 
     <script type="module" src="./app.js"></script>
 </body>

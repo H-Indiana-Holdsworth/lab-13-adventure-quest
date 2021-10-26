@@ -2,9 +2,9 @@
 
 ## Home page 
 * HTML Elements
-    - [ ] Text input for user name 
-    - [ ] Radio buttons for user race
-    - [ ] Form Submit button
+    - [x] Text input for user name 
+    - [x] Radio buttons for user race
+    - [x] Form Submit button
 * Events
     * Form Submit
         - [ ] Generate a user object using form data (generateUser)
