@@ -1,0 +1,20 @@
+body {
+    background-image: url('../assets/map.jpeg');
+}
+
+#map-links {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+a {
+    color: wheat;
+    font-size: 3rem;
+    margin-top: 60px;
+}
