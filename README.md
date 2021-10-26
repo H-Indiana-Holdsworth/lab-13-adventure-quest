@@ -8,7 +8,7 @@
 * Events
     * Form Submit
         - [x] Generate a user object using form data (generateUser)
-        - [ ] Store data in localStorage
+        - [x] Store data in localStorage
         - [ ] Redirect to Home page
 
 ## Map Page
