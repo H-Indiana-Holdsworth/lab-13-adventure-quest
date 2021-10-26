@@ -15,7 +15,7 @@
 * HTML Elements
 * List of links
     - [ ] Only clickable if user hasn't completed quest
-    - [ ] Link should contain a URL search parameter containing the quest ID
+    - [x] Link should contain a URL search parameter containing the quest ID
 * Events 
     - [ ] On page load -- TBD:GAME LOGIC
 
