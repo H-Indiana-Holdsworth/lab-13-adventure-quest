@@ -9,7 +9,7 @@
     * Form Submit
         - [x] Generate a user object using form data (generateUser)
         - [x] Store data in localStorage
-        - [ ] Redirect to Home page
+        - [x] Redirect to Home page
 
 ## Map Page
 * HTML Elements

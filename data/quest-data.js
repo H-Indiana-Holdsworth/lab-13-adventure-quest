@@ -111,3 +111,11 @@ const jabba = {
         monies: 0,
     }]
 };
+
+const quests = [
+    pirates,
+    bar,
+    jabba,
+];
+
+export default quests;
