@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import quests from '../data/quest-data.js';
+// import quests from '../data/quest-data.js';
 import { generateUser, getUser, hasCompletedAllQuests, scoreQuest, setUser } from '../utils.js';
 
 const test = QUnit.test;
@@ -105,7 +105,7 @@ test('hasCompletedAllQuests returns true if user has completed all quests', (exp
 test('hasCompletedAllQuests returns false if user has not completed all quests', (expect)=>{
     const userObject = {
         completed: { bar: true, pirates: true }
-    }
+    };
 
     const actual = hasCompletedAllQuests(userObject);
 
