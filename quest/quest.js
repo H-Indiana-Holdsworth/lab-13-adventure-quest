@@ -4,7 +4,6 @@ import { findById, getUser, scoreQuest, setUser } from '../utils.js';
 // use search params to determine which quest to display
 const params = new URLSearchParams(window.location.search);
 const questData = findById(quests, params.get('id'));
-console.log(questData);
 
 // update all the HTML Elements with the quest data
 const title = document.getElementById('quest-title');
