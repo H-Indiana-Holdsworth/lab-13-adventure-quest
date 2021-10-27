@@ -43,3 +43,21 @@ export function hasCompletedAllQuests(userObject){
     }
     return true;
 }
+
+export function loadUser() {
+    // get user info from localStorage
+    const user = getUser();
+
+    // update DOM with user info
+    const userImg = document.getElementById('user-image');
+    userImg.src = `../assets/${user.race}.jpeg`;
+
+    const userName = document.getElementById('user-name');
+    userName.textContent = user.name;
+
+    const userHonor = document.getElementById('user-honor');
+    userHonor.textContent = user.honor;
+
+    const userMonies = document.getElementById('user-monies');
+    userMonies.textContent = user.monies;
+}
