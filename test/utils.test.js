@@ -1,5 +1,6 @@
 // IMPORT MODULES under test here:
-import { generateUser, getUser, scoreQuest, setUser } from '../utils.js';
+import quests from '../data/quest-data.js';
+import { generateUser, getUser, hasCompletedAllQuests, scoreQuest, setUser } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -88,4 +89,25 @@ test('scoreQuest should update monies, honor, and completed on the userObject', 
     expect.equal(userObject.honor, 50);
     expect.equal(userObject.monies, -500);
     expect.equal(userObject.completed[questId], true);
+});
+
+test('hasCompletedAllQuests returns true if user has completed all quests', (expect)=>{
+    // arrange
+    const userObject = {
+        completed: { bar: true, pirates: true, Jabba: true }
+    };
+    // act
+    const actual = hasCompletedAllQuests(userObject);
+    // expect
+    expect.equal(actual, true);
+});
+
+test('hasCompletedAllQuests returns false if user has not completed all quests', (expect)=>{
+    const userObject = {
+        completed: { bar: true, pirates: true }
+    }
+
+    const actual = hasCompletedAllQuests(userObject);
+
+    expect.equal(actual, false);
 });

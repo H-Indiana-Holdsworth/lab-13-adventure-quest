@@ -1,4 +1,4 @@
-// import quests from './data/quest-data.js';
+import quests from './data/quest-data.js';
 
 export function generateUser(formData){
     // return a userObject using data from form data
@@ -33,4 +33,13 @@ export function scoreQuest(choiceObject, questId, userObject){
     userObject.honor += choiceObject.honor;
     userObject.monies += choiceObject.monies;    
     userObject.completed[questId] = true;
+}
+
+export function hasCompletedAllQuests(userObject){
+    for (let quest of quests) {
+        if (!userObject.completed[quest.id]) {
+            return false;
+        }
+    }
+    return true;
 }

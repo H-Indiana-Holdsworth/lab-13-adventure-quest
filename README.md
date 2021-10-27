@@ -17,7 +17,10 @@
     - [x] Only clickable if user hasn't completed quest
     - [x] Link should contain a URL search parameter containing the quest ID
 * Events 
-    - [ ] On page load -- TBD:GAME LOGIC
+    - [ ] Page Load
+        - [ ] hasCompletedAllQuests checks if quests.completed = true
+        - [ ] If honor <= 0, redirect to endgame page
+        - [ ] If all quests completed, redirect to endgame page
 
 ## Quest Detail Page
 * HTML Elements 
@@ -32,3 +35,11 @@
     * Form submit
         - [x] Update user object
         - [x] Redirect to map page
+
+## Endgame page
+* HTML Elements
+    * User Object
+    * Present
+        - [ ] Text and messages
+        - [ ] Images
+    * Link to play again
