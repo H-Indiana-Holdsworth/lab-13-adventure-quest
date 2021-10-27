@@ -17,10 +17,10 @@
     - [x] Only clickable if user hasn't completed quest
     - [x] Link should contain a URL search parameter containing the quest ID
 * Events 
-    - [ ] Page Load
-        - [ ] hasCompletedAllQuests checks if quests.completed = true
-        - [ ] If honor <= 0, redirect to endgame page
-        - [ ] If all quests completed, redirect to endgame page
+    - [x] Page Load
+        - [x] hasCompletedAllQuests checks if quests.completed = true
+        - [x] If honor <= 0, redirect to endgame page
+        - [x] If all quests completed, redirect to endgame page
 
 ## Quest Detail Page
 * HTML Elements 
