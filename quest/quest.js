@@ -1,9 +1,9 @@
 import quests from '../data/quest-data.js';
-// import { findById, getUser, setUser, scoreQuest } from '../utils.js';
-import { findById, getUser } from '../utils.js';
+import { findById, getUser, scoreQuest, setUser } from '../utils.js';
 
 // use search params to determine which quest to display
 const params = new URLSearchParams(window.location.search);
+console.log(params.get('id'));
 const questData = findById(quests, params.get('id'));
 
 // update all the HTML Elements with the quest data
@@ -17,6 +17,7 @@ const description = document('quest-description');
 description.textContent = questData.description;
 
 const questChoices = document.getElementById('quest-choices');
+console.log(questChoices);
 for (let choice of questData.choices) {
     const label = document.createElement('label');
 
@@ -42,15 +43,29 @@ questChoices.addEventListener('submit', (e)=>{
     // get the selected choice from the choices array (findById)
     const selectedRadio = document.querySelector('input[type="radio"]:checked');
     const choice = findById(questData.choices, selectedRadio.value);
-
     // get userdata from localStorage (getUser)
     const user = getUser();
     // update the user (scoreQuest(choice, questId, user))
         // update monies, honor, completed
+    scoreQuest(choice, questData.id, user);
 
         // reset to localStorage (setUser)
-
+    setUser(user);
     // display the result
+    const questDetails = document.getElementById('quest-details');
+    questDetails.classList.add('hidden');
     
+    const questResults = document.getElementById('results');
+
+    const resultP = document.createElement('p');
+    resultP.textContent = choice.result;
+
     // display a link to go back to map
+    const backLink = document.createElement('a');
+    backLink.href = '../map';
+    backLink.textContent = 'Return to Map';
+
+    questResults.append(resultP, backLink);
+
+    questResults.classList.add('hidden');
 });
