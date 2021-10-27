@@ -24,7 +24,7 @@ const pirates = {
         You and your crew are experienced fighters so you take out your blaster and shoot the leader's ear off, the rest of your crew does likewise and the pirates scurry back to their ship. They left in such a hurry that one of the pirates forgets his loot bag, you find 5,000 monies in it!
         `,
         honor: +50,
-        monies: 5.000
+        monies: 5000
     }, {
         id: 'surrender',
         description: 'Surrender yourself and your crew',
@@ -32,7 +32,7 @@ const pirates = {
         You acquiesce their request and surrender yourself and your crew over to the pirates without a word. They are angered by your spinelessness and execute your whole crew and throw you out into space. You lose your honor.
         `, 
         honor: -100,
-        monies: -1.000
+        monies: -1000
     }]
 };
 
@@ -54,7 +54,7 @@ const bar = {
         You accept the death stix and buy some. You try them, and die. Why do you think they're called death stix?
         `,
         honor: 0,
-        monies: -1.000,
+        monies: -1000,
     }, {
         id: 'decline',
         description: 'Decline the offer',
@@ -92,7 +92,7 @@ const jabba = {
         You brandish your blaster and shoot his eye out, you're crew didn't leave you behind and the come out from nowhere and shoot up Jabba's guards, you steal his money and get outta dodge. Jabba's a rich criminal so you get +50 honor, and +10,000 monies!
         `,
         honor: +50,
-        monies: +10.000,
+        monies: +10000,
     }, {
         id: 'pay',
         description: `Pay your debt`,
@@ -100,7 +100,7 @@ const jabba = {
         You're an honorable guy so you decide it's finally time to pay up on this debt, you take a loan out from Jabba to pay it off. Wait...
         `,
         honor: +10,
-        monies: -10.000
+        monies: -10000
     }, {
         id: 'slave',
         description: `Offer yourself as payment`,

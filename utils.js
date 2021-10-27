@@ -1,3 +1,5 @@
+// import quests from './data/quest-data.js';
+
 export function generateUser(formData){
     // return a userObject using data from form data
     return {
@@ -25,4 +27,10 @@ export function findById(items, id) {
             return item;
         }
     }
+}
+
+export function scoreQuest(choiceObject, questId, userObject){
+    userObject.honor += choiceObject.honor;
+    userObject.monies += choiceObject.monies;    
+    userObject.completed[questId] = true;
 }

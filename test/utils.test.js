@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { generateUser, getUser, setUser } from '../utils.js';
+import { generateUser, getUser, scoreQuest, setUser } from '../utils.js';
 
 const test = QUnit.test;
 
@@ -58,4 +58,34 @@ test('getUser should return user from localStorage', (expect)=>{
     const actual = getUser();
     // expect
     expect.deepEqual(actual, expected);
+});
+
+test('scoreQuest should update monies, honor, and completed on the userObject', (expect)=>{
+    // arrange
+    const userObject = {
+        completed: {},
+        honor: 50,
+        monies: 500,
+        name:'indy',
+        race: 'ewok'
+    };
+
+    const choiceObject = {
+        id: 'accept',
+        description: 'Graciously accept his offer',
+        result: `
+        You accept the death stix and buy some. You try them, and die. Why do you think they're called death stix?
+        `,
+        honor: 0,
+        monies: -1000,
+    };
+
+    const questId = 'bar';
+    // act 
+    scoreQuest(choiceObject, questId, userObject);
+
+    // expect
+    expect.equal(userObject.honor, 50);
+    expect.equal(userObject.monies, -500);
+    expect.equal(userObject.completed[questId], true);
 });
