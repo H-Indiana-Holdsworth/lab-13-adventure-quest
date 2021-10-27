@@ -18,3 +18,13 @@ a {
     font-size: 3rem;
     margin-top: 60px;
 }
+
+a:hover {
+    font-size: 3.2rem;
+}
+
+span {
+    color: wheat;
+    font-size: 3rem;
+    margin-top: 60px;
+}

@@ -14,21 +14,21 @@
 ## Map Page
 * HTML Elements
 * List of links
-    - [ ] Only clickable if user hasn't completed quest
+    - [x] Only clickable if user hasn't completed quest
     - [x] Link should contain a URL search parameter containing the quest ID
 * Events 
     - [ ] On page load -- TBD:GAME LOGIC
 
 ## Quest Detail Page
 * HTML Elements 
-     - [ ] Title
-     - [ ] Description
-     - [ ] Image
-     - [ ] Choices (radio buttons)
+     - [x] Title
+     - [x] Description
+     - [x] Image
+     - [x] Choices (radio buttons)
 * Events
     * Page load 
-        - [ ] Get quest ID from the URL Search Parameters and load teh quest data onto the page
+        - [x] Get quest ID from the URL Search Parameters and load the quest data onto the page
 
     * Form submit
-        - [ ] Update user object
-        - [ ] Redirect to map page
+        - [x] Update user object
+        - [x] Redirect to map page
