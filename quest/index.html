@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="./quest.css">
     <title>Quest Detail Page</title>
 </head>
@@ -21,16 +22,15 @@
         </div>
     </header>
     
-    <section>
-        <h1 id="quest-title">Quest Title</h1>
-        <img src="" alt="" id="quest-image">
-        <div id="quest-details" class="quest-details">
-            <p id="quest-description"></p>
-            <form id="quest-choices"></form>
-        </div>    
-        <div id="results" class="hidden"></div>
-    </section>
-    
+        <section id="quest">
+            <h1 id="quest-title">Quest Title</h1>
+            <img src="" alt="" id="quest-image">
+            <div id="quest-details" class="quest-details">
+                <p id="quest-description"></p>
+                <form id="quest-choices"></form>
+            </div>    
+            <div id="results" class="hidden"></div>
+        </section>
     <script src="./quest.js" type="module"></script>
 </body>
 </html>
