@@ -1,6 +1,8 @@
 body {
     background-image: radial-gradient(circle, yellow, blue, black);
     color: white;
+    font-family: 'Geostar Fill', cursive;
+    font-size: 1.25rem;
 }
 
 #quest {
@@ -12,10 +14,25 @@ body {
 }
 
 #quest-title {
+    font-family: 'Geostar', cursive;
+    font-size: 2.5rem;
     text-align: center;
 }
 
+#quest-description {
+    font-family: 'Geostar', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+span {
+    /* display: flex;
+    flex-direction: row; */
+    margin: 20px;
+}
+
 header {
+    height: 20%;
     display: flex;
     justify-content: flex-end;
 }
