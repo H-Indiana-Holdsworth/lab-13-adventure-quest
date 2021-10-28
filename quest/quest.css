@@ -1,3 +1,57 @@
+body {
+    background-image: radial-gradient(circle, yellow, blue, black);
+    color: white;
+    font-family: 'Geostar Fill', cursive;
+    font-size: 1.25rem;
+}
+
+#quest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: fit-content;
+}
+
+#quest-title {
+    font-family: 'Geostar', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#quest-description {
+    font-family: 'Geostar', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+span {
+    /* display: flex;
+    flex-direction: row; */
+    margin: 20px;
+}
+
+header {
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#quest-image {
+    width: 530px;
+    height: 250px;
+    align-self: center;
+}
+
+
 .hidden {
     display: none;
+}
+
+button {
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    align-self: center;
 }

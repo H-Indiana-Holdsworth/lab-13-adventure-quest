@@ -28,3 +28,28 @@ span {
     font-size: 3rem;
     margin-top: 60px;
 }
+
+.header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+#user-image {
+    width: 100px;
+    height: 160px;
+}
+
+label {
+    margin-top: 10px;
+}

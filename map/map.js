@@ -1,7 +1,7 @@
 // import quest data 
 import quests from '../data/quest-data.js';
 
-import { getUser } from '../utils.js';
+import { getUser, hasCompletedAllQuests, loadUser } from '../utils.js';
 // get map-links element from html
 const mapLinks = document.getElementById('map-links');
 
@@ -30,3 +30,9 @@ function displaySpan(quest){
     
     mapLinks.appendChild(span);
 }
+
+if (user.honor < 0 || hasCompletedAllQuests(user)) {
+    window.location.replace('../endgame');
+}
+
+loadUser();

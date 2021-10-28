@@ -1,5 +1,5 @@
 import quests from '../data/quest-data.js';
-import { findById, getUser, scoreQuest, setUser } from '../utils.js';
+import { findById, getUser, loadUser, scoreQuest, setUser } from '../utils.js';
 
 // use search params to determine which quest to display
 const params = new URLSearchParams(window.location.search);
@@ -36,6 +36,8 @@ const button = document.createElement('button');
 button.textContent = 'Choose';
 questChoices.append(button);
 
+loadUser();
+
 questChoices.addEventListener('submit', (e)=>{
     e.preventDefault();
     // get the selected choice from the choices array (findById)
@@ -66,5 +68,7 @@ questChoices.addEventListener('submit', (e)=>{
     questResults.append(resultP, backLink);
 
     questResults.classList.remove('hidden');
+
+    loadUser();
 
 });
